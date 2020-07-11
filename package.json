@@ -1,0 +1,28 @@
+{
+  "name": "book_stall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client":"npm run start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "engines": {"node":"12.18.1"},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment-js": "^1.1.15",
+    "mongoose": "^5.9.22",
+    "nodemon": "^2.0.4"
+
+  }
+}
